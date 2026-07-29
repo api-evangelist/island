@@ -1,8 +1,27 @@
 aid: island
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/island.png
 name: Island
-description: 'Island is a company surfaced as a portfolio company of insight-partners and added to the
-  API Evangelist network as a stub for enrichment. Sector: cybersecurity. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Island is the developer of the Enterprise Browser, a Chromium-based browser
+  purpose-built for the enterprise that embeds security, data protection, and governance
+  directly into the last mile of work. The platform unifies an Enterprise Browser,
+  Enterprise AI, and an Enterprise Network (SASE) so organizations can control how
+  users interact with SaaS and internal applications, enforcing data-loss prevention,
+  privileged access, insider-risk controls, and zero-trust policy at the browser layer,
+  and replacing VDI/DaaS for many contractor and BYOD scenarios. Island is a private
+  cybersecurity company backed by Insight Partners and other investors. No public developer
+  API or OpenAPI surface is published; administration is via the management console
+  at management.island.io.'
 url: https://raw.githubusercontent.com/api-evangelist/island/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +31,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Cybersecurity
+- Enterprise Browser
+- Zero Trust
+- SASE
+- Data Protection
+- Privileged Access Management
+- Insider Risk
+- Web Security
+- AI Security
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +52,24 @@ maintainers:
 common:
 - type: Website
   url: https://www.island.io/
+- type: Blog
+  url: https://www.island.io/blog
+- type: Support
+  url: https://www.island.io/product-support
+- type: Login
+  url: https://management.island.io/
+- type: TermsOfService
+  url: https://www.island.io/legal/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.island.io/legal/privacy
+- type: TrustCenter
+  url: https://trust.island.io/
+- type: Download
+  url: https://download.island.io/
+- type: DomainSecurity
+  url: security/island-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

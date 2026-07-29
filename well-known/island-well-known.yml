@@ -1,0 +1,17 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of Island public hosts
+host: https://www.island.io
+# Island publishes no API discovery surface. All standard /.well-known/ and
+# agent-discovery endpoints were probed and returned 404. Absence is valid,
+# recorded data; no WellKnown/SecurityTxt pointer is emitted because nothing
+# returned 200.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /llms.txt
+  status: 404
